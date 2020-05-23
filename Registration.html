@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!--fontawesome-->
+    <link href="./css/all.css" rel="stylesheet">
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/registration.css'>
+    
+    <title>Registration Form</title>
+</head>
+<body>
+    <section>
+        <div class="container" id="container">
+            <!-- Sign Up -->
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Event Registration</h1>
+                    <input type="text" placeholder="Name" />
+                    <input type="number" placeholder="Mobile No."/>
+                    <input type="email" placeholder="Email" />
+                    <input type="file" placeholder="Upload ID Card" />
+                    <!--<input type="password" placeholder="Password" />-->
+                    <select name="type">
+                        <option value="" selected="selected" disabled="disabled"> Registration Type</option>
+                        <option value="1">Self</option>
+                        <option value="2">Group</option>
+                        <option value="3">Corporate</option>
+                        <option value="4">Others</option>
+                    </select>
+                    <input type="not" placeholder="Number of Tickets" />
+                    <button>Register</button>
+                </form>
+            </div>
+            <!-- Sign In-->
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <!-- overlay  -->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>
+                            To keep connected with us please login with your personal info
+                        </p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src='./js/registration.js'></script>
+</html>
