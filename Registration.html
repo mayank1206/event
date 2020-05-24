@@ -19,9 +19,9 @@
                 <form action="#">
                     <h1>Event Registration</h1>
                     <input type="text" placeholder="Name" />
-                    <input type="number" placeholder="Mobile No."/>
-                    <input type="email" placeholder="Email" />
-                    <input type="file" placeholder="Upload ID Card" />
+                    <input type="tel" placeholder="Mobile No." pattern="[0-9]{10}" />
+                    <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                    <input type="file" class="custom-file-input" />
                     <!--<input type="password" placeholder="Password" />-->
                     <select name="type">
                         <option value="" selected="selected" disabled="disabled"> Registration Type</option>
@@ -37,11 +37,11 @@
             <!-- Sign In-->
             <div class="form-container sign-in-container">
                 <form action="#">
-                    <h1>Sign in</h1>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <a href="#">Forgot your password?</a>
-                    <button>Sign In</button>
+                    <h1>Ticket Booked</h1>
+                    <input type="text" placeholder="Registration ID" />
+                    <!--<input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>-->
+                    <button>Booked Ticket</button>
                 </form>
             </div>
             <!-- overlay  -->
@@ -50,14 +50,14 @@
                     <div class="overlay-panel overlay-left">
                         <h1>Welcome Back!</h1>
                         <p>
-                            To keep connected with us please login with your personal info
+                            To keep connected with us get the Tickets please login with your registration ID
                         </p>
-                        <button class="ghost" id="signIn">Sign In</button>
+                        <button class="ghost" id="signIn">Booked Ticket</button>
                     </div>
                     <div class="overlay-panel overlay-right">
                         <h1>Hello, Friend!</h1>
                         <p>Enter your personal details and start journey with us</p>
-                        <button class="ghost" id="signUp">Sign Up</button>
+                        <button class="ghost" id="signUp">Event Registration</button>
                     </div>
                 </div>
             </div>
